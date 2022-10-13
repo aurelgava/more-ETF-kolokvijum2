@@ -16,6 +16,19 @@ public class Mornar {
     public Mornar(String ime, int kvalitet) {
         this.ime = ime;
         this.kvalitet = kvalitet;
+        
+        if(this.kvalitet < 0){
+        
+        this.kvalitet = 0;
+            
+        }
+        
+        if(this.kvalitet > 100){
+        
+        this.kvalitet = 100;
+            
+        }
+        
     }
 
     public String dohvatiIme() {
