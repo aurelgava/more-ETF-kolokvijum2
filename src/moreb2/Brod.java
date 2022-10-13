@@ -79,7 +79,7 @@ public abstract class Brod {
     }
     public String toString() {
     
-    String opis = vrsta + " - " + naziv + " : " + kvalitetPosade();
+    String opis = vrsta + " - " + naziv + " : " + kvalitetPosade() + "\n";
         
     for (int i = 0; i < trenutniBrMornara; i++){
     
