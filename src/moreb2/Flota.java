@@ -36,7 +36,7 @@ public class Flota{
             e.sled = null;
         }
     }
-    Brod dohvati(int i) throws Exception{
+    Brod dohvBrod(int i) throws Exception{
         Elem e = brodovi;
         if(e == null)
             throw new GIndeks();
