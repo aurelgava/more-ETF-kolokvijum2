@@ -57,9 +57,38 @@ public abstract class Brod {
         mornari = null;
         trenutniBrMornara = 0;
     }
-    public double kvalitetPosade(){
-    }
-    public String toString() {}
     public abstract void napadni(Brod b);
+    //public Mornar dohvatiKapetana() {}
+    //public int indeksNajgoregMornara(){}
+    //public Mornar dohvatiNajboljegMornara(){}
+    //public int dohvatiTrenutniBrMornara(){}
+    //public char dohvatiVrstu(){}
+    //public void ukloniSveMornare(){}
+    public double kvalitetPosade(){
+    
+    double zbir = 0;    
+    for (int i = 0; i < trenutniBrMornara; i++){
+    
+    zbir += mornari[i].dohvatiKvalitet();
+        
+    }
+        
+    return zbir/trenutniBrMornara;
+    
+    }
+    public String toString() {
+    
+    String opis = vrsta + " - " + naziv + " : " + kvalitetPosade();
+        
+    for (int i = 0; i < trenutniBrMornara; i++){
+    
+    opis += mornari[i] + ", ";
+        
+    }
+    
+    return opis;
+    
+    }
+    //public abstract void napadni(Brod b);
     
 }

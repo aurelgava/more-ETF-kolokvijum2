@@ -9,17 +9,17 @@ package moreb2;
  *
  * @author Korisnik
  */
-public class GusarskiBrod extends Brod {
+public class KraljevskiBrod extends Brod{
     
-    public GusarskiBrod(String naziv, int brMornara, Mornar kapetan) {
-        
-        super(naziv, brMornara, kapetan, 'G');
-    
+    public KraljevskiBrod(String naziv, int brMornara, Mornar kapetan) {
+        super(naziv, brMornara, kapetan, 'K');
     }
 
     @Override
     public void napadni(Brod b) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
+    
     
 }
