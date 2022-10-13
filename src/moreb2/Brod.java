@@ -10,13 +10,23 @@ package moreb2;
  */
 public abstract class Brod {
     protected String naziv;
-    protected int brMornara;
+    protected int brMornara; // kapacitet broda
     protected Mornar[] mornari;
     private int trenutniBrMornara;
     private char vrsta;
-    public Brod(String naziv, int brMornara, Mornar kapetan, char vrsta) {}
-    public void dodajMorn(Mornar m) {}
-    public int dohvBr() {}
+    public Brod(String naziv, int brMornara, Mornar kapetan, char vrsta) {
+        this.naziv = naziv;
+        this.brMornara = brMornara;
+        mornari = new Mornar[brMornara];
+        mornari[0] = kapetan;
+        this.vrsta = vrsta;
+    }
+    public void dodajMorn(Mornar m) {
+        
+    }
+    public int dohvBr() {
+        
+    }
     public Mornar dohvatiKapetana() {}
     public int indeksNajgoregMornara(){}
     public Mornar dohvatiNajboljegMornara(){}
