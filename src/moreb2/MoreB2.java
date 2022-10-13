@@ -18,7 +18,7 @@ public class MoreB2 {
         Mornar m2 = new Mornar("B", 100), m3 = new Mornar("C", 60), m4 = new Mornar("D", 40);
         GusarskiBrod g1 = new GusarskiBrod("Pearl", 5, m1);
         KraljevskiBrod k1 = new KraljevskiBrod("St. John", 2, m3);
-        try {
+        /*try {
             g1.dodajMorn(m2);
             g1.dodajMorn(new Mornar("E", 60));
             k1.dodajMorn(m4);
@@ -47,7 +47,7 @@ public class MoreB2 {
             System.out.println(flota);
         } catch (Exception e) {
             System.err.println(e);
-        }
+        }*/
     }
     
 }
