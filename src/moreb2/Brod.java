@@ -28,10 +28,11 @@ public abstract class Brod {
             mornari[trenutniBrMornara] = mornari[0];
             mornari[0] = m;
         }
+        trenutniBrMornara++;
     }
     
     public int dohvBr() {
-        return brMornara;
+        return trenutniBrMornara;
     }
     public Mornar dohvatiKapetana() {
         return mornari[0];
@@ -90,5 +91,10 @@ public abstract class Brod {
     
     }
     //public abstract void napadni(Brod b);
+    Mornar dohvMorn(int i) throws GIndeks{
+        if(i > trenutniBrMornara-1)
+            throw new GIndeks();
+        return mornari[i];
+    }
     
 }
