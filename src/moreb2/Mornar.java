@@ -41,7 +41,7 @@ public class Mornar {
     }
     
     public String toString() {
-    return "M_" + ime + " :  " + kvalitet;
+    return "(" + "M_" + ime + " :  " + kvalitet + ")";
     }
     
 }
